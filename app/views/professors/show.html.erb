@@ -1,5 +1,8 @@
 <main>
   <h2><%= @professor.name %></h2>
+  <section id="students-info">
+    <p>Average Age: <%= @students_average_age %></p>
+  </section>
   <section id="students">
   <% @professor.students.each do |student| %>
     <%= student.name %>

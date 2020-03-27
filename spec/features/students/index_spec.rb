@@ -30,5 +30,9 @@ RSpec.describe "As a visitor", type: :feature do
     within("#student-#{longbottom.id}") do
       expect(page).to have_content("#{longbottom.name}: #{longbottom.professors.length}")
     end
+
+    expect(page.all('article')[0]).to have_content(malfoy.name)
+    expect(page.all('article')[1]).to have_content(harry.name)
+    expect(page.all('article')[2]).to have_content(longbottom.name)
   end
-end
+ end

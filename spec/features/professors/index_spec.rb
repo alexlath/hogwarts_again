@@ -25,5 +25,9 @@ RSpec.describe "As a visitor", type: :feature do
       expect(page).to have_content(lupin.age)
       expect(page).to have_content(lupin.specialty)
     end
+
+    expect(page.all('article')[0]).to have_content(lupin.name)
+    expect(page.all('article')[1]).to have_content(hagarid.name)
+    expect(page.all('article')[2]).to have_content(snape.name)
   end
 end
