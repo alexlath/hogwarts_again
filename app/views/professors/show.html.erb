@@ -1,0 +1,8 @@
+<main>
+  <h2><%= @professor.name %></h2>
+  <section id="students">
+  <% @professor.students.each do |student| %>
+    <%= student.name %>
+  <% end %>
+  </section>
+</main>
