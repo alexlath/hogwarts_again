@@ -206,6 +206,9 @@
         "lines": [
           1,
           null,
+          null,
+          null,
+          1,
           null
         ]
       },
@@ -305,8 +308,24 @@
           null,
           null
         ]
+      },
+      "/Users/alexlatham/turing/2module/challenges/hogwarts_again/app/controllers/professors_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/alexlatham/turing/2module/challenges/hogwarts_again/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1585322556
+    "timestamp": 1585323203
   }
 }

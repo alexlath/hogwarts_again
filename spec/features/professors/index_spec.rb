@@ -22,8 +22,8 @@ RSpec.describe "As a visitor", type: :feature do
 
     within("#professor-#{lupin.id}") do
       expect(page).to have_content(lupin.name)
-      expect(page).to have_content(luipin.age)
-      expect(page).to have_content(luipin.specialty)
+      expect(page).to have_content(lupin.age)
+      expect(page).to have_content(lupin.specialty)
     end
   end
 end
