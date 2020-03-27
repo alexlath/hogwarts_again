@@ -1,0 +1,8 @@
+<main>
+  <h2>Students</h2>
+  <% @students.each do |student| %>
+    <article id="student-<%= student.id %>">
+      <%= student.name %>: <%= student.professors.length %>
+    </article>
+  <% end %>
+</main>

@@ -20,24 +20,15 @@ RSpec.describe "As a visitor", type: :feature do
     visit "/students"
 
     within("#student-#{harry.id}") do
-      expect(page).to have_content("#{harry.name}: 3")
-      expect(page).to have_content(snape.specialty)
-      expect(page).to have_content(hagarid.specialty)
-      expect(page).to have_content(lupin.specialty)
+      expect(page).to have_content("#{harry.name}: #{harry.professors.length}")
     end
 
     within("#student-#{malfoy.id}") do
-      expect(page).to have_content("#{malfoy.name}: 2")
-      expect(page).to_not have_content(snape.specialty)
-      expect(page).to have_content(hagarid.specialty)
-      expect(page).to have_content(lupin.specialty)
+      expect(page).to have_content("#{malfoy.name}: #{malfoy.professors.length}")
     end
 
     within("#student-#{longbottom.id}") do
-      expect(page).to have_content("#{longbottom.name}: 1")
-      expect(page).to have_content(snape.specialty)
-      expect(page).to_not have_content(hagarid.specialty)
-      expect(page).to_not have_content(lupin.specialty)
+      expect(page).to have_content("#{longbottom.name}: #{longbottom.professors.length}")
     end
   end
 end
